@@ -1,50 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="https://mdbootstrap.com/favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
-  </head>
-  <body>
-    <!-- Start your project here-->
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-        <div class="text-center">
-          <img
-            class="mb-4"
-            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
-            style="width: 250px; height: 90px"
-          />
-          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
-          <p class="mb-3">MDB Team</p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://mdbootstrap.com/docs/standard/getting-started/"
-            target="_blank"
-            role="button"
-            >Start MDB tutorial</a
-          >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="https://mdbootstrap.com/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDBootstrap -->
+  <link rel="stylesheet" href="./mdb-ui-kit.css" />
+</head>
+
+<body>
+  <!-- Sidenav -->
+  <nav data-mdb-sidenav-init id="sidenav-1" class="sidenav" data-mdb-hidden="true">
+    <ul class="sidenav-menu">
+      <li class="sidenav-item">
+        <a class="sidenav-link">
+          <i class="far fa-smile fa-fw me-3"></i><span>Link 1</span></a>
+      </li>
+      <li class="sidenav-item">
+        <a class="sidenav-link"><i class="fas fa-grin fa-fw me-3"></i><span>Category 1</span></a>
+        <ul class="sidenav-collapse show">
+          <li class="sidenav-item">
+            <a class="sidenav-link">Link 2</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Link 3</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidenav-item">
+        <a class="sidenav-link"><i class="fas fa-grin-wink fa-fw me-3"></i><span>Category 2</span></a>
+        <ul class="sidenav-collapse">
+          <li class="sidenav-item">
+            <a class="sidenav-link">Link 4</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Link 5</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- Sidenav -->
+
+  <!-- Toggler -->
+      <button data-mdb-ripple-init data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1" class="btn btn-primary"
+        aria-controls="#sidenav-1" aria-haspopup="true">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Toggler -->
+
+  <!-- Start your project here-->
+  <div class="container">
+    <div class="d-flex">
+
+      <div class="">
+        <img class="mb-4" src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
+          style="width: 250px; height: 90px" />
+        <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
+        <p class="mb-3">MDB Team</p>
+
+        <!-- Tabs navs -->
+        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a data-mdb-tab-init class="nav-link active" id="ex1-tab-1" href="#ex1-tabs-1" role="tab"
+              aria-controls="ex1-tabs-1" aria-selected="true">Tab 1</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a data-mdb-tab-init class="nav-link" id="ex1-tab-2" href="#ex1-tabs-2" role="tab"
+              aria-controls="ex1-tabs-2" aria-selected="false">Tab 2</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a data-mdb-tab-init class="nav-link" id="ex1-tab-3" href="#ex1-tabs-3" role="tab"
+              aria-controls="ex1-tabs-3" aria-selected="false">Tab 3</a>
+          </li>
+        </ul>
+        <!-- Tabs navs -->
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="ex1-content">
+          <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+            <div>
+              <h1>新NISAを「魔法の箱扱いはダメ」、気をつけたい三つのポイント</h1>
+              <p>
+                「貯蓄から投資へ」という政府のスローガンのもと、今年１月に「NISA（少額投資非課税制度）」が大幅拡充・恒久化された「新NISA」の制度がスタートしました。これまで投資に関心を持ってこなかった人も、新NISAをきっかけに「投資を始めてみようかな」と考える傾向があるらしく、読売新聞の掲示板サイト「発言小町」にも、投資についての疑問が寄せられています。初心者が気をつけたいポイントを、ファイナンシャルプランナーの塚越菜々子さんに聞きました。
+              </p>
+              <p>
+                「投資やります？やっています？メリットは？」のタイトルで投稿してきたのは、50代半ばの女性「ごませんべい」さん。子どもたちはすでに社会人となり、今の貯金額はおよそ1500万円。これから65歳になるまで共働きを続け、自分の収入だけで1000万円くらいは老後資金として積み増しできればと考えています。
+              </p>
+              <h2>銀行の利息よりマシ</h2>
+              <p>低金利時代、銀行に預けていてもほとんど増えないからと、すでに投資を始めている人も少なくないようです。</p>
+              <p>「ここ3年ほど『つみたてNISA』をしていました。年間40万円×3年で元の120万円が今150万円になっています。そのほか、1000万円ほど株式投資をしていて、配当や売買益で年間100万円ほどの利益を出しています。優待品も届きます。銀行の利息よりはいいです。でも今は読みが外れて持ち株を売却するとウン十万のマイナスです」（「今のところです」さん）</p>
+              <h2>初めて買った株で早速17万円マイナス</h2>
+              <p>
+                「50代。家はリフォーム済みでローンもなく、老後資金も達成済みですので、今年になって余剰金で初めて株を購入しました。早速17万円のマイナスでした。でも紙クズにはならない企業ですし売却しないので気にしません。稼ぐと言うより長期保有を経験してみたかったのです」（「チョコ」さん）
+              </p>
+              <h3>銀行の利息よりマシ</h3>
+              <p>低金利時代、銀行に預けていてもほとんど増えないからと、すでに投資を始めている人も少なくないようです。</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+            Tab 2 content
+          </div>
+          <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+            Tab 3 content
+          </div>
+        </div>
+        <!-- Tabs content -->
+
+        <div class="d-block d-sm-none">
+          <a class="btn btn-primary btn-lg" href="https://mdbootstrap.com/docs/standard/getting-started/"
+            target="_blank" role="button">Start MDB tutorial</a>
         </div>
       </div>
     </div>
-    <!-- End your project here-->
+  </div>
+  <!-- End your project here-->
 
-    <!-- MDB -->
-    <script src="./main.js"></script>
-    <!-- Custom scripts -->
-    <script type="module"></script>
-  </body>
+  <!-- MDB -->
+  <script src="./mdb-ui-kit.js"></script>
+  <!-- Custom scripts -->
+  <script type="module"></script>
+</body>
+
 </html>
