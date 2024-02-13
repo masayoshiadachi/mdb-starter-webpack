@@ -1,3 +1,18 @@
+# デザインのカスタマイズ
+
+## SCSSファイル
+
+src/scss/main.scssを編集する。変数は本家bootstrapの変数を確認すること。
+
+https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
+
+## コンパイル
+
+`npm run build`でdistの下にCSSファイルができるのでこれをコピーする。
+
+また、`npm run start`でリアルタイムにコンパイルできるので開発時はこれを使う。
+
+
 ![MDB Logo](https://mdbootstrap.com/img/Marketing/general/logo/medium/mdb-r.png)
 
 # MDB 5 Webpack Starter

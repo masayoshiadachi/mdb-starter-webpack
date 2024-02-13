@@ -20,11 +20,12 @@ $navbar-padding-top: $spacer !default;
 $variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
 $prefix: $variable-prefix !default;
 
-// Fonts
+// フォントはGoogleフォントに、文字間の高さは1.5より大きく
 $font-family-sans-serif: 'Noto Sans JP', sans-serif !default;
 $font-family-base: var(--#{$prefix}font-sans-serif) !default;
 $line-height-base: 1.75 !default;
 
+// ジャンプ率は読売新聞を参考に
 $font-size-base: 1rem !default;
 $h1-font-size: $font-size-base * 1.25 !default;
 $h2-font-size: $font-size-base * 1.125 !default;
@@ -33,15 +34,26 @@ $h4-font-size: $font-size-base !default;
 $h5-font-size: $font-size-base !default;
 $h6-font-size: $font-size-base !default;
 
+// 見出しはボールドに
 $headings-font-weight: 700 !default;
 
-// Body
+// 見出しの下マージン
+$spacer: 1rem !default;
+$headings-margin-bottom: $spacer !default;
+
+// 文字色はより黒に近く
 $body-color: #262626 !default;
 // $body-tertiary-bg: #fbfbfb !default;
 
+// h2は縦棒で強調
 h2 {
   border-left: 4px solid $primary;
   padding-left: 0.5rem;
+}
+
+// リンクの文字列は改行
+a {
+  word-wrap: break-word;
 }
 
 @import '../assets/mdb/src/scss/mdb.pro.scss'
