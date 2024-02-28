@@ -13,8 +13,8 @@ $primary: #009688;
 $spacer: 1rem !default;
 
 // Navbar
-$navbar-padding-y: $spacer !default;
-$navbar-padding-top: $spacer !default;
+// $navbar-padding-y: $spacer !default;
+// $navbar-padding-top: $spacer !default;
 
 // Prefix for :root CSS variables
 $variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
@@ -35,7 +35,7 @@ $h5-font-size: $font-size-base !default;
 $h6-font-size: $font-size-base !default;
 
 // 見出しはボールドに
-$headings-font-weight: 700 !default;
+$headings-font-weight: 600 !default;
 
 // 見出しの下マージン
 $spacer: 1rem !default;
@@ -47,7 +47,7 @@ $body-color: #262626 !default;
 
 // h2は縦棒で強調
 h2 {
-  border-left: 4px solid $primary;
+  border-left: 0.25rem solid $primary;
   padding-left: 0.5rem;
 }
 
